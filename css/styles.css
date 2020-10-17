@@ -62,7 +62,7 @@ nav .navbar{
 
   #about{
     font-family: 'Tangerine', serif;
-    font-size: 80px;
+    font-size: 40px;
     color: green;
     font-weight:bolder;
     text-shadow: 6px 4px 4px rgb(216, 35, 171);
@@ -74,5 +74,15 @@ nav .navbar{
 #about-us .message{
   padding: 45px 30px 40px;
   background-color: beige;
+}
+.varieties{
+  font-family: 'Tangerine', serif;
+  font-size: 40px;
+  color: green;
+  font-weight:bolder;
+  text-shadow: 6px 4px 4px rgb(216, 35, 171);
+}
+.card-title{
+  color: green;
 }
   
