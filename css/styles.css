@@ -59,4 +59,20 @@ nav .navbar{
     position: relative;
     overflow-x: hidden;
   }
+
+  #about{
+    font-family: 'Tangerine', serif;
+    font-size: 80px;
+    color: green;
+    font-weight:bolder;
+    text-shadow: 6px 4px 4px rgb(216, 35, 171);
+}
+.about-pic {
+  background-color:beige;
+  padding: 20px 30px 40px;
+}
+#about-us .message{
+  padding: 45px 30px 40px;
+  background-color: beige;
+}
   
