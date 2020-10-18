@@ -19,10 +19,10 @@
                 <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="#about_us">About Us</a>
+                      <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#variety">Our Varieties</a>
+                      <a class="nav-link" href="#varieties">Our Varieties</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#place order">Place Order</a>
@@ -69,7 +69,7 @@
   </div>
 
   <div class=" container-fluid what-we-offer text-center mt-5">
-    <h2 class="varieties">Our Varieties</h2>
+    <h2 id="varieties">Our Varieties</h2>
 
     <div class="card-deck">
         <div class="card">
@@ -85,7 +85,7 @@
         <div class="card">
             <img src="./images/margherita-pizza.jpg" height="250px" class="card-img-top" alt="Margeritta Pizza">
             <div class="card-body">
-                <h5 class="card-title">Margheritta Pizza</h5>
+                <h5 class="card-title">Margherita Pizza</h5>
                 <p class="card-text">Margherita Pizza is a Neapolitan pizza, made with San Marzano tomatoes,
                     mozzarella cheese, fresh basil, salt and extra-virgin olive oil</p>
             </div>
@@ -134,7 +134,61 @@
 
         </div>
     </div>
-</div>
+</div>     
+       
+<div class="container-fluid order" id="make-order">
+  <div class="order-overlay">
+    <div class="controls-top text-center" id="Order-now"> 
+      <h2>Order Here</h2>
+    </div>
+    <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+    <div class="row">
+        <div class="col-sm-5">
+          <form action="">
+              <label for="select">Select Your Flavor</label>
+              <select class="browser-default custom-select custom-select-md mb-3 name" id="flavor">
+                <option selected value="0">Choose your flavor</option>
+                <option value="BBQ Chicken Pizza">BBQ Chicken Pizza</option>
+                <option value="Margherita Pizza">Margherita Pizza</option>
+                <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+                <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+                <option value="Periperi Pizza">Periperi Pizza</option>
+                <option value="Meat Lovers Pizza">Meat Lovers Pizza</option>
+              </select>
+            <label for="select">Select Size</label>
+            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+              <option selected value="0">Select size here</option>
+              <option value="Large">Large -- sh. 1000</option>
+              <option value="Medium">Medium -- sh. 750</option>
+              <option value="Small">Small -- sh. 600</option>
+            </select>
+            <label for="crust">Choose your favorite Crust!</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                  <option selected value="0">Select your preferred crust!</option>
+                <option value="Crispy">Crispy -- sh. 200</option>
+                <option value="Stuffed">Stuffed -- sh. 150</option>
+                <option value="Gluten-free">Gluten-free-- sh. 180</option>
+              </select>
+              <label class="number"> Number of Pizza's</label>
+              <input type="number" class="form-control" id="quantity" placeholder="Number of pizzas"
+                  min="1" required>
+            <label for="Toppings">Select Your Toppings at sh. 100 each</label><br>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                <label class="custom-control-label" for="Sausage">Sausage</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                <label class="custom-control-label" for="Bacon">Bacon</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+              </div>
+              <br>
+              <button type="submit" id="btnSubmit" class="btn btn-primary checkoutBtn mt-5 mb-5"><a class="text-white" href="#mySummary">Checkout</a></button>
+
+              
 
 </div>
 </body>
