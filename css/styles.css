@@ -106,3 +106,13 @@ nav .navbar{
  box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8);
  margin-bottom: 30px;
 }
+#contact h2{
+  text-align: center;
+}
+#contact{
+  background-color: green;
+}
+#contactdetails h2{
+  text-align: left;
+}
+  
