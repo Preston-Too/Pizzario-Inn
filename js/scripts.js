@@ -56,7 +56,7 @@ $(document).ready(function () {
         }
 
     }
-    
+
     function size() {
         var pizzaSize = document.getElementById('size').value;
         if (pizzaSize === 'Large') {
@@ -80,4 +80,13 @@ $(document).ready(function () {
             else if (preferredCrust === 'Glutten Free') {
                 return 180
             }
+        }
+
+        function toppings() {
+            return 100
+        }
+        function number() {
+            var pizzaNumber = document.getElementById('quantity').value;
+            return parseInt(pizzaNumber);
+    
         }
