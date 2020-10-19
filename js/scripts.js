@@ -29,7 +29,8 @@ $(document).ready(function () {
         $('.cdata-overlay').show();
     })
     $('.go').click(function () {
-        alert('Your Order will be delivered soon. Thank You')
+        alert('Your Order will be delivered soon. Delivery fee is Ksh. 150')
+        alert("Thank you for believing in us.")
     })
 
 
@@ -61,13 +62,13 @@ $(document).ready(function () {
     function size() {
         var pizzaSize = document.getElementById('size').value;
         if (pizzaSize === 'Large') {
-            return 1000
+            return 800
         }
         else if (pizzaSize === 'Medium') {
-            return 750
+            return 650
         }
         else if (pizzaSize === 'Small') {
-            return 600
+            return 500
         }
 
     }
@@ -102,6 +103,6 @@ $(document).ready(function () {
     Order.prototype.totalcost = function () {
         return ((this.newFlavor + this.newCrust + this.newSize + this.newTopping) * this.newQuantity)
     }
-
+    event.preventDefault();
 
 });
