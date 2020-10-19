@@ -188,7 +188,46 @@
               <br>
               <button type="submit" id="btnSubmit" class="btn btn-primary checkoutBtn mt-5 mb-5"><a class="text-white" href="#mySummary">Checkout</a></button>
 
+              <div class=" container order-summary" id="mySummary">
+                <h1 class="text-center" id="summary">Order Summary</h1>
+                <h2 class="text-center summary">Dear Customer, Below is the summary of your order:</h2>
+                <div class="theSummary text-center">
+                <p><b>Pizza Type:</b> <lable id="typeOfPizza"></lable>
+                </p>
+                <p><b>Pizza Size:</b> <lable id="typeOfSize"></lable>
+                </p>
+                <p><b>Pizza Topping:</b> <lable id="typeOfTopping"></lable>
+                </p>
+                <p><b>Pizza Crust:</b> <lable id="typeOfCrust"></lable>
+                </p>
+                <p><b>Quantity:</b> <lable id="typeOfQty"></lable>
+                </p>
+                <p><b>Total Cost:</b> <lable id="typeOfCost"></lable>
+                </p>
+                </div>
               
+              
+                <div class="d-block mx-auto text-center">
+                    <button class='deliver'>Make Delivery</button>
+                    <button class='pickUp'>Pick Up</button>
+                </div>
+              
+              
+                <div class="cdata-overlay">
+                    <div class="customerdata row">
+                        <div class="col-sm-3"></div>
+                        <form action="" class="form-group col-sm-6 data">
+                            <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                            <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                            <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                            <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                        </form>
+              
+              
+                    </div>
+                </div>
+              
+              </div>     
 
 </div>
 </body>
