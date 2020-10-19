@@ -56,3 +56,14 @@ $(document).ready(function () {
         }
 
     }
+    function size() {
+        var pizzaSize = document.getElementById('size').value;
+        if (pizzaSize === 'Large') {
+            return 1000
+        }
+        else if (pizzaSize === 'Medium') {
+            return 750
+        }
+        else if (pizzaSize === 'Small') {
+            return 600
+        }
