@@ -33,6 +33,7 @@ $(document).ready(function () {
     })
 
 
+
     function flavor() {
         var pizzaFlavor = document.getElementById('flavor').value;
 
@@ -69,24 +70,38 @@ $(document).ready(function () {
             return 600
         }
 
-        function crust() {
-            var preferredCrust = document.getElementById('crust').value;
-            if (preferredCrust === 'Crispy') {
-                return 200
-            }
-            else if (preferredCrust === 'Stuffed') {
-                return 150
-            }
-            else if (preferredCrust === 'Glutten Free') {
-                return 180
-            }
+    }
+    function crust() {
+        var preferredCrust = document.getElementById('crust').value;
+        if (preferredCrust === 'Crispy') {
+            return 200
         }
+        else if (preferredCrust === 'Stuffed') {
+            return 150
+        }
+        else if (preferredCrust === 'Glutten Free') {
+            return 180
+        }
+    }
+    function toppings() {
+        return 100
+    }
+    function number() {
+        var pizzaNumber = document.getElementById('quantity').value;
+        return parseInt(pizzaNumber);
 
-        function toppings() {
-            return 100
-        }
-        function number() {
-            var pizzaNumber = document.getElementById('quantity').value;
-            return parseInt(pizzaNumber);
-    
-        }
+    }
+    function Order(flavor, size, crust, topping, quantity) {
+        this.newFlavor = flavor;
+        this.newSize = size;
+        this.newCrust = crust;
+        this.newTopping = topping;
+        this.newQuantity = quantity;
+    }
+
+    Order.prototype.totalcost = function () {
+        return ((this.newFlavor + this.newCrust + this.newSize + this.newTopping) * this.newQuantity)
+    }
+
+
+});
