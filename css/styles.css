@@ -97,10 +97,6 @@ nav .navbar{
 }
 .order-overlay{
   background-color: rgba(0, 0, 0, 0.8);
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-bottom: 20px;
-  padding-left: 6%;
 }
 .cdata-overlay {
   display: none;
@@ -110,4 +106,3 @@ nav .navbar{
  box-shadow: 0 7px 8px 0 rgba(0,0,0,0.8), 0 10px 10px 0 rgba(0,0,0,0.8);
  margin-bottom: 30px;
 }
-  
