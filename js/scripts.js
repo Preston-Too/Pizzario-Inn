@@ -56,6 +56,7 @@ $(document).ready(function () {
         }
 
     }
+    
     function size() {
         var pizzaSize = document.getElementById('size').value;
         if (pizzaSize === 'Large') {
@@ -66,4 +67,17 @@ $(document).ready(function () {
         }
         else if (pizzaSize === 'Small') {
             return 600
+        }
+
+        function crust() {
+            var preferredCrust = document.getElementById('crust').value;
+            if (preferredCrust === 'Crispy') {
+                return 200
+            }
+            else if (preferredCrust === 'Stuffed') {
+                return 150
+            }
+            else if (preferredCrust === 'Glutten Free') {
+                return 180
+            }
         }
