@@ -115,4 +115,13 @@ nav .navbar{
 #contactdetails h2{
   text-align: left;
 }
-  
+@media only screen and (max-width: 485px){
+  .flex-xs-column {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 767px){
+.flex-xs-column {
+    flex-direction: column;
+  }
+}
