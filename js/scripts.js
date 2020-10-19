@@ -33,3 +33,26 @@ $(document).ready(function () {
     })
 
 
+    function flavor() {
+        var pizzaFlavor = document.getElementById('flavor').value;
+
+        if (pizzaFlavor === 'BBQ Chicken Pizza') {
+            return 100
+        }
+        else if (pizzaFlavor === 'Margherita Pizza') {
+            return 200
+        }
+        else if (pizzaFlavor === 'Pepperoni Pizza') {
+            return 150
+        }
+        else if (pizzaFlavor === 'Hawaiian Pizza') {
+            return 100
+        }
+        else if (pizzaFlavor === 'Periperi Pizza') {
+            return 200
+        }
+        else if (pizzaFlavor === 'Meat Lovers Pizza') {
+            return 130
+        }
+
+    }
